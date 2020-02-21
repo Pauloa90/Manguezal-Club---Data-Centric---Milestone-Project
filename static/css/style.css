@@ -1,11 +1,11 @@
 .navbar {
-    background-color: rgb(207, 200, 105);
+    background-color: rgb(160, 103, 224);
     border-color: #E7E7E7;
 }
 
 .bg {
     background-image: url("../images/beer.jpg");
-    padding: 100px;
-    margin: 100px;
+    padding: 100%;
+    margin: none;
     padding-top: 1rem; }
     
