@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css"/>
+	<title>Document</title>
 </head>
+
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light .navbar-trans">
+		<a class="navbar-brand" href="#">Manguezal Community</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/review">Review</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="bg pb-5">
+		<div class="cover-inner container">
+			<h1 class="jumbotron-heading">Welcome to Manguezal Club<h1>
+					<p class="lead">Share your experiences</p>
+					<p class="lead">Become a beer professional</p>
 
-    <nav>
-        <li><a href="/">Home</a></li> <!--Posso substituir por {{ url_for('index')}}-->
-        <li><a href="/about">About</a></li><!--Posso substituir por {{ url_for('about')}}-->
-        <li><a href="/contact">Contact</a></li><!--Posso substituir por {{ url_for('contact')}}-->
 
-    </nav>
-    {% block content %}
-    {% endblock %}
+		</div>
+	</div>
+	<!--Posso substituir por {{ url_for('index')}}-->
+	<!--Posso substituir por {{ url_for('about')}}-->
+	<!--Posso substituir por {{ url_for('contact')}}-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	{% block content %}
+	{% endblock %}
 </body>
+
 </html>

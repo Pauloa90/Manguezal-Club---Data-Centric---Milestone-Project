@@ -1,0 +1,15 @@
+.navbar {
+    background-color: rgb(207, 200, 105);
+    border-color: #E7E7E7;
+}
+
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    min-height: 50rem;
+    height: auto;
+    border-radius: 0;
+    width: 100%;
+    color: #fff;
+    padding-top: 1rem; }
+    

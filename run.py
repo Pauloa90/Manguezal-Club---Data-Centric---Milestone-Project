@@ -15,6 +15,11 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route("/review")
+def review():
+    return render_template("review.html")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
