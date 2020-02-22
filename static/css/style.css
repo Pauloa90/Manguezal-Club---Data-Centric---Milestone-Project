@@ -4,8 +4,9 @@
 }
 
 .bg {
-    background-image: url("../images/beer.jpg");
+    background-image: url("../images/beer.jpg"), center, no-repeat;
     padding: 100%;
     margin: none;
+    height: auto;
     padding-top: 1rem; }
     
