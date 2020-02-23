@@ -33,6 +33,9 @@ def contact():
 def review():
     return render_template("review.html")
 
+@app.route("/addreview")
+def addreview():
+    return render_template("addreview.html")
 
 
 if __name__ == "__main__":
