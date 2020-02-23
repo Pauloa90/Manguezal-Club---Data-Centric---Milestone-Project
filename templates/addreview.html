@@ -3,30 +3,42 @@
 <div class="row">
 	<form action="" method="POST" class="col s12">
 		<div class="row">
+			<div class="input-field col s12">
+                <i class="material-icons prefix">local_drink</i>
+				<select id="category" name="category_name">
+                    <option value="" disabled selected>Choose your option</option>
+                    {% for cat in categories %}
+                    <option value="{{ cat.category_name }}">{{ cat.category_name }}</option>
+                    {% endfor %}
+                </select>
+				<label>Choose your beer!</label>
+			</div>
+		</div>
+		<div class="row">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">assignment</i>
 				<input id="name" name="name" type="text" class="validate">
 				<label for="icon_prefix">Your Name</label>
 			</div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">subject</i>
-                <textarea id="review" name="review" class="materialize-textarea"></textarea>
-                <label for="icon_telephone">Review</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="switch">
-                <label>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">subject</i>
+				<textarea id="review" name="review" class="materialize-textarea"></textarea>
+				<label for="icon_telephone">Review</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="switch">
+				<label>
                     Off
                     <input type="checkbox" id="is_urgent" name="is_urgent">
                     <span class="lever"></span>
                     On
                 </label>
-            </div>
-        </div>
-             
+			</div>
+		</div>
+
 	</form>
 </div>
 {% endblock %}

@@ -31,11 +31,12 @@ def contact():
 
 @app.route("/review")
 def review():
-    return render_template("review.html")
+    return render_template("addreview.html")
 
 @app.route("/addreview")
 def addreview():
-    return render_template("addreview.html")
+    return render_template("addreview.html",
+    categories=mongo.db.categories.find())
 
 
 if __name__ == "__main__":
