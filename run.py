@@ -17,10 +17,10 @@ def manguezalclub():
     return render_template('manguezalclub.html', manguezalclub=mongo.db.review.find())
 
 @app.route("/")
-@app.route("/manguezalclub")
-def get_reviews():
-    return render_template("manguezalclub.html",
-        manguezalclub=mongo.db.review.find())
+def index():
+    return render_template("index.html")
+
+
 
 @app.route("/addreview")
 def addreview():
@@ -33,7 +33,12 @@ def insert_review():
     review.insert_one(request.form.to_dict())
     return redirect(url_for('manguezalclub'))
 
-
+@app.route('/edit_review/<review_id>')
+def edit_review(review_id):
+    _review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
+    _categories = mongo.db.categories.find()
+    category_list = [category for category in _categories]
+    return render_template('editreview.html', review=_review, categories = categories_list)
 
 
 if __name__ == "__main__":

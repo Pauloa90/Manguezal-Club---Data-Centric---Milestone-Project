@@ -27,12 +27,11 @@
 				<li class="nav-item">
 					<a class="nav-link" href="/addreview">Review</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/about">About</a>
+                <li class="nav-item active">
+					<a class="nav-link" href="/manguezalclub">Manguezal Club <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/contact">Contact</a>
-				</li>
+			
+				
 			</ul>
 		</div>
 	</nav>
@@ -45,16 +44,13 @@
 	</div>
     <img src="https://unsplash.com/photos/UErWoQEoMrc" alt="" srcset="">-->
        
-	<!--Posso substituir por {{ url_for('index')}}-->
-	<!--Posso substituir por {{ url_for('about')}}-->
-	<!--Posso substituir por {{ url_for('contact')}}
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	
         
 
-    
-	{% block content %}
-	{% endblock %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" 
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

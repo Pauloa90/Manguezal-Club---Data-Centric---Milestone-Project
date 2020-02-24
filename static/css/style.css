@@ -1,10 +1,22 @@
 body{
-    background-color: red;
+    background-color: rgb(88, 185, 192);
 }
 
 .navbar {
     background-color: rgb(160, 103, 224);
     border-color: #E7E7E7;
+}
+
+.btn_small{
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}
+
+.task_header{
+    margin_top: 5px;
 }
 
 .bg {
