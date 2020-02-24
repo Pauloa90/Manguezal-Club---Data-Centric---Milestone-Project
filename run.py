@@ -21,7 +21,6 @@ def index():
     return render_template("index.html")
 
 
-
 @app.route("/addreview")
 def addreview():
     return render_template("addreview.html", 
@@ -35,10 +34,9 @@ def insert_review():
 
 @app.route('/edit_review/<review_id>')
 def edit_review(review_id):
-    _review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
-    _categories = mongo.db.categories.find()
-    category_list = [category for category in _categories]
-    return render_template('editreview.html', review=_review, categories = categories_list)
+    the_review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template('edit_review.html', review=the_review, categories = all_categories)
 
 
 if __name__ == "__main__":
