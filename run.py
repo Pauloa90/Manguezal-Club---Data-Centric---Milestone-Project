@@ -16,27 +16,24 @@ mongo = PyMongo(app)
 def manguezalclub():
     return render_template('manguezalclub.html', manguezalclub=mongo.db.review.find())
 
-
 @app.route("/")
-def index():
-    return render_template("index.html")
-
-@app.route("/about")
-def about():
-    return render_template("about.html")
-
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
-
-@app.route("/review")
-def review():
-    return render_template("addreview.html")
+@app.route("/manguezalclub")
+def get_reviews():
+    return render_template("manguezalclub.html",
+        manguezalclub=mongo.db.review.find())
 
 @app.route("/addreview")
 def addreview():
-    return render_template("addreview.html",
-    categories=mongo.db.categories.find())
+    return render_template("addreview.html", 
+        categories=mongo.db.categories.find())
+
+@app.route("/insert_review", methods=['POST'])
+def insert_review():
+    review = mongo.db.review
+    review.insert_one(request.form.to_dict())
+    return redirect(url_for('manguezalclub'))
+
+
 
 
 if __name__ == "__main__":
