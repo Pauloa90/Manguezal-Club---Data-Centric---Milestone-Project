@@ -1,20 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
 
-<ul class="collapsible">
-	{% for manguezalclub in manguezalclub %}
-	<li>
-		<div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>{{manguezalclub.name}} - {{manguezalclub.date}}
-        </div>
-		<div class="collapsible-body">
-            <span>  
-                {{manguezalclub.review}}
-            </span>
-        </div>
-	</li>
-	{% endfor %}
-	
-</ul>
+    <div class="parallax-container bg">
+        <div class="parallax"><img src="../static/images/beer.jpg"></div>
+    </div>
+
 
 {% endblock %}

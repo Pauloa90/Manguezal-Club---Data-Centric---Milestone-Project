@@ -3,7 +3,7 @@ body{
 }
 
 .navbar {
-    background-color: rgb(160, 103, 224);
+    background: rgb(89, 71, 109);
     border-color: #E7E7E7;
 }
 
@@ -20,11 +20,15 @@ body{
 }
 
 .bg {
-    background-image: url("../images/beer.jpg"), center, no-repeat;
+    background: url("../images/beer.jpg")center  no-repeat;
     padding: 100%;
     margin: none;
     height: auto;
     padding-top: 1rem; }
+
+
+
+
 
 .crunchify-rating {
     overflow: hidden;
