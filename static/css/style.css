@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(88, 185, 192);
+    background-color: rgb(114, 68, 104);
+   
+    
 }
 
 .navbar {
@@ -7,6 +9,37 @@ body{
     border-color: #E7E7E7;
 }
 
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 1.5rem;
+}
+
+a{
+    font-family: 'Anton' ;
+    }
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container-fluid {
+  position: relative;
+}
+.text-block {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    font-family: 'Anton' ;
+    font-size: 3rem;
+    color: white;
+}
+
+.imagens{
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
 .btn_small{
     height: 24px;
     width: 60px;
@@ -19,36 +52,32 @@ body{
     margin_top: 5px;
 }
 
-.bg {
-    background: url("../images/beer.jpg")center  no-repeat;
-    padding: 100%;
-    margin: none;
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img {
+    padding-left: 0px;
+    padding-right: 0px;
     height: auto;
-    padding-top: 1rem; }
+    max-height: 70vh;
+    width: 100%;
 
+    /* Set a specific height */
+  
 
+    margin: 0;
+    padding: 0;
 
-
-
-.crunchify-rating {
-    overflow: hidden;
-    margin-bottom: 35px;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
-    font-size: 16px;
-    color: #333;
-    padding: 30px 60px 5px;
-    background: #fff;
-    border-left: 2px solid #157BDA;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.crunchify-rating:before {
-    content: "Rating"!important;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    float: left;
-    margin: 2px 15px 15px 0;
-    background: #157BDA;
-    padding: 0px 20px;
-    border-radius: 30px;
-}
+
+

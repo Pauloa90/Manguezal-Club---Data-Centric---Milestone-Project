@@ -1,9 +1,33 @@
 {% extends 'base.html' %}
 {% block content %}
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
 
-    <div class="parallax-container bg">
-        <div class="parallax"><img src="../static/images/beer.jpg"></div>
+
+
+    
+    <div class="container-fluid">
+        <img src="../static/images/beer2.jpg" class="img">
+        <div class="text-block">
+            <p>we are proud to offer meetings and experiences</p>
+            <h4>Manguezal Club</h4>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            
+            <h2>Grain</h1>
+            <p>mostly malted barley but also other grains</p>
+            <img src="../static/images/yeast.jpg" class="imagens">
+        </div>
+        <div class="col-4">
+            <h2>Hops</h1>
+            <p>grown in many different varieties</p>
+        </div>
+        <div class="col-4">
+
+            <h2>Yeast</h1>
+            <p>responsible for fermentation; based on style-specific strains</p>
+        </div>
     </div>
 
 
