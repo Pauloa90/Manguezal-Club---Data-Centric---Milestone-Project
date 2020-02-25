@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(114, 68, 104);
+    background-color: rgb(250, 242, 248));
    
     
 }
@@ -47,7 +47,7 @@ a{
     color:  rgb(114, 68, 104);
     background-color: white;
 }
-.btn_small{
+olikuyhjkhgjkmhjkall{
     height: 24px;
     width: 60px;
     line-height: 24px;
@@ -65,8 +65,11 @@ a{
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
-}
 
+}
+ button{
+    background: #5565ad;
+}
 .img {
     padding-left: 0px;
     padding-right: 0px;
@@ -89,7 +92,7 @@ a{
 
 .parallax {
   /* The image used */
-  background-image: url("../images/galera.jpg");
+  background-image: url("../images/3breja.jpeg");
 
   /* Set a specific height */
   height: 500px;
@@ -101,3 +104,44 @@ a{
   background-size: cover;
 }
 
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/mangue.jpeg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form{
+    background: rgb(205, 183, 233);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto';
+}
+
+.jumbotron-fluid{
+    margin: 0
+}
+
+.formulario{
+    background: #ffffff;
+}
+
+.btn-floating{
+    color: red;
+}
+
+i{
+    color: blue;
+}
+
+.footer-copyright{
+    text-align: center;
+}
