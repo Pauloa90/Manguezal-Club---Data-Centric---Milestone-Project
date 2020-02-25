@@ -37,8 +37,15 @@ a{
 
 .imagens{
     border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
+}
+
+.ingr{
+    text-align: center;
+    font-family: 'Roboto';
+    color:  rgb(114, 68, 104);
+    background-color: white;
 }
 .btn_small{
     height: 24px;
@@ -80,4 +87,17 @@ a{
     background-size: cover;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/galera.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
