@@ -110,6 +110,10 @@ a{
     background-size: cover;
 }
 
+.jumbotron-fluid{
+    margin: 0
+}
+
 .parallax {
   
   background-image: url("../images/3breja.jpeg");
@@ -142,30 +146,41 @@ a{
   background-size: cover;
 }
 
+/* Contact */
 form{
-    background: rgb(205, 183, 233);
+    background: rgb(104, 70, 158);
     padding: 30px;
     margin: 30px;
     border-radius: 15px;
     font-family: 'Roboto';
 }
 
-
-.jumbotron-fluid{
-    margin: 0
-}
-
 .formulario{
     background: #ffffff;
 }
 
-.btn-floating{
-    color: red;
+/* Footer */
+footer{
+    background:rgb(205, 183, 233);
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #704fb1;
+}
+.footer i{
+ color: white;
 }
 
-i{
-    color: blue;
-}
+
+
+
+
+
 
 .footer-copyright{
     text-align: center;
