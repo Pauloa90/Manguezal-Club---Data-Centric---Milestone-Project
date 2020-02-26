@@ -1,9 +1,10 @@
 body{
     background-color: rgb(250, 242, 248));
    
-    
 }
 
+
+/* Narbar */
 .navbar {
     background: rgb(89, 71, 109);
     border-color: #E7E7E7;
@@ -23,18 +24,38 @@ a{
     font-size: 1.2rem;
 }
 
-.container-fluid {
+/* First Section */
+
+.landing {
   position: relative;
+}
+
+.landing p {
+    font-size: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing p {
+    font-size: 4vw;
+  }
+}
+.landing h4{
+    font-size: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing h4 {
+    font-size: 4vw;
+  }
 }
 .text-block {
     position: absolute;
-    top: 100px;
-    left: 70px;
+    top: 20vw;
+    left: 3vw;
     font-family: 'Anton' ;
     font-size: 3rem;
     color: white;
 }
 
+/* Ingredients */
 .imagens{
     border-radius: 50%;
     height: 15rem;
@@ -46,14 +67,13 @@ a{
     font-family: 'Roboto';
     color:  rgb(114, 68, 104);
     background-color: white;
+    height: 
 }
-olikuyhjkhgjkmhjkall{
-    height: 24px;
-    width: 60px;
-    line-height: 24px;
-    margin: 5px 5px;
-    padding: 0 0.5em;
+.ingredients{
+    margin-bottom: 30px;
 }
+
+
 
 .task_header{
     margin_top: 5px;
@@ -67,31 +87,10 @@ olikuyhjkhgjkmhjkall{
     margin-left: auto;
 
 }
- button{
-    background: #5565ad;
-}
-.img {
-    padding-left: 0px;
-    padding-right: 0px;
-    height: auto;
-    max-height: 70vh;
-    width: 100%;
 
-    /* Set a specific height */
-  
-
-    margin: 0;
-    padding: 0;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .parallax {
-  /* The image used */
+  
   background-image: url("../images/3breja.jpeg");
 
   /* Set a specific height */
