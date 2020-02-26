@@ -1,30 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>Review das Cervejas Manguezal</h1>
-
-
+    <h1>Review das Cervejas Manguezal</h1>
+    {% for manguezalclub in manguezalclub %}
+    <div class="jumbotron p-5 m-5">
+        <h3 class="display-5">{{manguezalclub.name}} - {{manguezalclub.date}}</h3>
+            <p class="lead">{{manguezalclub.review}}</p>
+        <hr class="my-4">
+        
+        <p class="lead">
+            <a class="btn btn-primary btn-small" href="#" role="button">Take it out</a>
+            <a class="btn btn-primary btn-small" href="#" role="button">Edit</a>
+        </p>
+    </div>
+    {% endfor %}
 
 <ul class="collapsible">
-	{% for manguezalclub in manguezalclub %}
-	<li>
-		<div class="collapsible-header">
-            <div class="col s3">
-                <i class="material-icons">expand_more</i>
-                <a  class="waves-effect waves-light btn-small">Done</a>
-                <a href="" class="waves-effect waves-light btn-small">Edit</a>
-            </div>
-            <div class="col s3 task_header">
-                <i class="material-icons">filter_drama</i>{{manguezalclub.name}} - {{manguezalclub.date}}
-            </div>
-            
-        </div>
-		<div class="collapsible-body">
-            <span>  
-                {{manguezalclub.review}}
-            </span>
-        </div>
-	</li>
-	{% endfor %}
+	
+	
+	
 	
 </ul>
 

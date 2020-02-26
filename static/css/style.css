@@ -148,11 +148,15 @@ a{
 
 /* Contact */
 form{
-    background: rgb(104, 70, 158);
+    background: rgb(122, 60, 221);
     padding: 30px;
     margin: 30px;
     border-radius: 15px;
     font-family: 'Roboto';
+    color: white;
+}
+.form-control{
+    color: white;
 }
 
 .formulario{
