@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
+    <!-- Here the reviews will be displayed in a Jumbotrom from Bootsrap -->
     <h1 class="text-center headingaddreview m-5">Manguezal Club Experiences</h1>
     {% for manguezalclub in manguezalclub %}
-    <div class="jumbotron p-5 m-5">
+    <div class="jumbotron clubexperience p-5 m-5">
         <h3 class="display-5">{{manguezalclub.name}} - {{manguezalclub.date}}</h3>
-            <p class="lead font-weight-normal font-italic">{{manguezalclub.review}}</p>
+            <p class="lead font-weight-normal font-italic">"{{manguezalclub.review}}"</p>
         <hr class="my-4">
         
         <p class="lead">
@@ -13,14 +14,4 @@
         </p>
     </div>
     {% endfor %}
-
-<ul class="collapsible">
-	
-	
-	
-	
-</ul>
-
-
-
 {% endblock %}

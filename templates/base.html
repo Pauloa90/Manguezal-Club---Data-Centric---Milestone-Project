@@ -17,9 +17,9 @@
 </head>
 
 <body>
-
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="#">Manguezal Community</a>
+    <!-- Navbar with the sections where the user can add a review -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a class="navbar-brand" href="/">Manguezal Brewery</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,11 +40,13 @@
 
 
 
-
+<!-- Here is where the content will be displayed within -->
 	<div class="container-fluid">
 		{% block content %}
 		{% endblock %}
 	</div>
+
+    <!-- Here is the footer for all the pages -->
     <footer class="footer  pt-4">
         <div class="container-fluid text-center text-md-left">
            <div class="row">
@@ -88,8 +90,6 @@
         <div class="footer-copyright m-auto py-3">
             @2020 Paulo Albuquerque Copyright
         </div>
-            <!-- Copyright -->
-
     </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"

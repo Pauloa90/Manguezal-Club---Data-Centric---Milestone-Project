@@ -2,42 +2,44 @@
 {% block content %}
 
 
-
-    
+    <!-- Image for main page with -->
     <div class="container-fluid landing">
-        <img src="../static/images/beer2.jpg" class="img">
+        <img src="../static/images/beer2.jpg" class="img" alt="landing image">
         <div class="text-block">
             <h4>Manguezal Club</h4>
             <p>we are proud to offer meetings and experiences</p>
             
-            <button type="button " class="btn btn-primary d-none d-md-block">Share experience</button>
+            <button  class="btn btn-primary d-none d-md-block">Share experience</button>
             
         </div>
     </div>
+
+    <!-- Section with the ingredients -->
     <div class="row ingr mb-0">
         <div class="col-md-4 col-sm-6 col-xs-12 ingredients">
             
             <h2 class="font-weight-bold mt-4">Grain</h2>
             <p>Selected grains mostly malted barley but also other grains on the composition.</p>
-            <img src="../static/images/grain.jpg" class="imagens">
+            <img src="../static/images/grain.jpg" class="imagens" alt="Grain ingredient">
             
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 ingredients">
             <h2 class="font-weight-bold mt-4">Hops</h2>
             <p>Grown in many different varieties chosen by our specialists.</p>
-            <img src="../static/images/hops.jpg" class="imagens">
+            <img src="../static/images/hops.jpg" class="imagens" alt="hops ingredient">
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 ingredients">
 
             <h2 class="font-weight-bold mt-4">Yeast</h2>
             <p>Responsible for fermentation, they were chosen with based on the high quality and style-specific strains.</p>
-            <img src="../static/images/yeast.jpg" class="imagens">
+            <img src="../static/images/yeast.jpg" class="imagens" alt="yeast ingredient">
         </div>
     </div>
     <div class="parallax intersection">
     
     </div>
-   
+
+   <!-- Section about the company -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">About</h1>
@@ -59,11 +61,14 @@
                 make the brand official and produce in a gypsy way at the Capunga brewery.</p>
         </div>
     </div>
+
+    <!-- Parallax visual effect -->
     <div class="parallax2">
     
     </div>
+    <!-- Form to get in contact with the company -->
     <div class="container-fluid mx-0">
-        <form class="contact">
+        <form class="contact col-xs-12 col-sm-12 col-md-6 col-lg-5  ">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fname">Fist Name</label>
@@ -79,16 +84,19 @@
                     <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                 </div>
                 
-            
-            <div class="form-group col-12">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-12">
 
-                    <label for="exampleFormControlTextarea1">Let's talk!</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1">Let's talk!</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
             </div>
            
                 <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
     
+
 
 {% endblock %}

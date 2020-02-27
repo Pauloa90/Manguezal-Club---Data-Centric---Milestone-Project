@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <h3>Edit Review</h3>
+
+<!-- The user will be able to edit the reviews on this application  -->
 <div class="row">
 	<form action="{{ url_for('update_review', review_id=review._id) }}" method="POST" class="col s12">
 		<div class="row">
