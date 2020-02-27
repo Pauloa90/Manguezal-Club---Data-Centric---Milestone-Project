@@ -193,7 +193,7 @@ footer{
 }
 
 .addreview{
-    background: rgb(211, 78, 78);
+    background: rgb(122, 98, 255);
     padding: 30px;
     margin: 30px;
     border-radius: 15px;
@@ -203,4 +203,19 @@ footer{
 
 .addreviewcontainer{
     background: rgb(255, 255, 255);
+}
+
+.form-control {
+    color: black;
+}
+.btn-primary {
+    color: #59476d;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    
+}
+
+.headingaddreview{
+    font-family: 'Anton';
+    text-align: center;
 }
