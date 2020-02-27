@@ -1,4 +1,7 @@
 import os
+from os import path
+if path.exists("env.py"):
+    import env
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
@@ -7,7 +10,7 @@ app = Flask(__name__)
 
 # Linking my app to MongoDB
 app.config["MONGO_DBNAME"] = 'reviewmanguezal'
-app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@myfirstcluster-73r36.mongodb.net/reviewmanguezal?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 # Creating a Instance for Pymongo
 mongo = PyMongo(app)
