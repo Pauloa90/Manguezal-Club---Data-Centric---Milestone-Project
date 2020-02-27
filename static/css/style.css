@@ -151,7 +151,7 @@ a{
 }
 
 /* Contact */
-form{
+.contact{
     background:rgb(117, 117, 117);
     padding: 30px;
     margin: 30px;
@@ -181,18 +181,26 @@ footer{
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  background: rgb(89, 71, 109);
+  
 }
 .footer i{
  color: white;
 }
 
 
-
-
-
-
-
 .footer-copyright{
     text-align: center;
+}
+
+.addreview{
+    background: rgb(211, 78, 78);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.addreviewcontainer{
+    background: rgb(255, 255, 255);
 }
