@@ -7,17 +7,17 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<title>Document</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
 </head>
 
 <body>
-    <!-- Navbar with the sections where the user can add a review -->
+	<!-- Navbar with the sections where the user can add a review -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 		<a class="navbar-brand" href="/">Manguezal Brewery</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
         </button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" href="/">Home </a>
 				</li>
 				<li class="nav-item">
@@ -40,63 +40,64 @@
 
 
 
-<!-- Here is where the content will be displayed within -->
+	<!-- Here is where the content will be displayed within -->
 	<div class="container-fluid">
 		{% block content %}
 		{% endblock %}
 	</div>
 
-    <!-- Here is the footer for all the pages -->
-    <footer class="footer  pt-4">
-        <div class="container-fluid text-center text-md-left">
-           <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">              
-                    <h5 class="text-uppercase">Manguezal Brewery</h5>
-                    <p>We are proud to offer meetings and experiences.</p>
-                    <p class="m-0 p-0"> 
-                        <i class="fa fa-phone m-0 p-0"></i> +55 (81) 99735–6614 <br/>
-                        <i class="fa fa-phone m-0 p-0"></i> +55 (81) 98595–7446 <br/>
-                        <i class="fa fa-envelope m-0 p-0"></i>cervejamanguezal@gmail.com
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-4 col-sm-4 col-xs-12 footer-social">
-                    <h5>Follow me</h5>
-                        <p>Keep following us order to get updated on our social media. We are developing more types of beers for you!</p>
-                        
-                        <a href="https://twitter.com/?lang=en" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/cervejamanguezal/" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/cervejamanguezal/?hl=en" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                </div>
-                <hr class="blue">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <h5>Become a Brewery Specialist</h5>
-                    <p>For exclusive content and get know our company from inside! </p>
-                    <button type="button" class="btn btn-primary btn-sm">Subscribe!</button>
-                </div>
-           </div>
-        </div>
+	<!-- Here is the footer for all the pages -->
+	<footer class="footer  pt-4">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<h5 class="text-uppercase">Manguezal Brewery</h5>
+					<p>We are proud to offer meetings and experiences.</p>
+					<p class="m-0 p-0">
+						<i class="fa fa-phone m-0 p-0"></i> +55 (81) 99735–6614 <br/>
+						<i class="fa fa-phone m-0 p-0"></i> +55 (81) 98595–7446 <br/>
+						<i class="fa fa-envelope m-0 p-0"></i>cervejamanguezal@gmail.com
+					</p>
+				</div>
+				<hr class="clearfix w-100 d-md-none pb-3">
+				<div class="col-md-4 col-sm-4 col-xs-12 footer-social">
+					<h5>Follow me</h5>
+					<p>Keep following us order to get updated on our social media. We are developing more types of beers
+						for you!</p>
 
-            <!-- Copyright -->
-        <div class="footer-copyright m-auto py-3">
-            @2020 Paulo Albuquerque Copyright
-        </div>
-    </footer>
+					<a href="https://twitter.com/?lang=en" target="_blank">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="https://www.facebook.com/cervejamanguezal/" target="_blank">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="https://www.instagram.com/cervejamanguezal/?hl=en" target="_blank">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="https://www.youtube.com/" target="_blank">
+						<i class="fa fa-youtube"></i>
+					</a>
+				</div>
+				<hr class="blue">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<h5>Become a Brewery Specialist</h5>
+					<p>For exclusive content and get know our company from inside! </p>
+					<button type="button" class="btn btn-primary btn-sm">Subscribe!</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="footer-copyright m-auto py-3">
+			@2020 Paulo Albuquerque Copyright
+		</div>
+	</footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
-    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
 <script>
 	$(document).ready(function(){
     $('.collapsible').collapsible();
