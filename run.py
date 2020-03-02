@@ -42,7 +42,18 @@ def editreview(review_id):
     all_categories = mongo.db.categories.find()
     return render_template('editreview.html', review = the_review, categories = all_categories)
 
-
+@app.route('/update_review/<review_id>', methods=["POST"])
+def update_review(review_id):
+    review = mongo.db.review
+    review.update( {'_id': ObjectId(review_id)},
+    {   
+        'category_name' : request.form.get('category_name'),
+        'name' : request.form.get('name'),
+        'review' : request.form.get('review'),
+        'date' : request.form.get('date')
+        
+    })
+    return redirect(url_for('manguezalclub'))
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
