@@ -59,6 +59,11 @@ def deletereview(review_id):
     mongo.db.review.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('manguezalclub'))
 
+@app.route('/get_categories')
+def get_categories():
+    return render_template('categories.html',
+                           categories=mongo.db.categories.find())
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
         port=int(os.environ.get("PORT")),

@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <!-- Here the reviews will be displayed in a Jumbotrom from Bootsrap -->
+    <h1 class="text-center headingaddreview m-5">Manguezal Club Experiences</h1>
+    {% for category in categories %}
+    <div class="jumbotron clubexperience p-5 m-5">
+        <h3 class="display-5">{{category.category_name}}</h3>
+            
+        <hr class="my-4">
+        
+        <p class="lead">
+            <a class="btn btn-primary btn-small" href="" role="button">Delete</a>
+            <a class="btn btn-primary btn-small" href="" role="button">Edit</a>
+        </p>
+    </div>
+    {% endfor %}
+{% endblock %}
