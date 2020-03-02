@@ -9,7 +9,7 @@
         <hr class="my-4">
         
         <p class="lead">
-            <a class="btn btn-primary btn-small" href="#" role="button">Take it out</a>
+            <a class="btn btn-primary btn-small" href="{{ url_for('deletereview', review_id = manguezalclub._id)}}" role="button">Take it out</a>
             <a class="btn btn-primary btn-small" href="{{ url_for('editreview', review_id = manguezalclub._id)}}" role="button">Edit</a>
         </p>
     </div>

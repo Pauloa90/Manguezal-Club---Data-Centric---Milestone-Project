@@ -45,7 +45,7 @@ def editreview(review_id):
 @app.route('/update_review/<review_id>', methods=["POST"])
 def update_review(review_id):
     review = mongo.db.review
-    review.update( {'_id': ObjectId(review_id)},
+    review.update({'_id': ObjectId(review_id)},
     {   
         'category_name' : request.form.get('category_name'),
         'name' : request.form.get('name'),
@@ -53,6 +53,10 @@ def update_review(review_id):
         'date' : request.form.get('date')
         
     })
+    return redirect(url_for('manguezalclub'))
+@app.route('/deletereview/<review_id>')
+def deletereview(review_id):
+    mongo.db.review.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('manguezalclub'))
 
 if __name__ == "__main__":
