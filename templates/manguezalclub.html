@@ -4,13 +4,13 @@
     <h1 class="text-center headingaddreview m-5">Manguezal Club Experiences</h1>
     {% for manguezalclub in manguezalclub %}
     <div class="jumbotron clubexperience p-5 m-5">
-        <h3 class="display-5">{{manguezalclub.name}} - {{manguezalclub.date}}</h3>
+        <h3 class="display-5">{{manguezalclub.name}} <i class="font-weight-light">experienced</i> {{manguezalclub.category_name}} <i class="font-weight-light">on</i> {{manguezalclub.date}}</h3>
             <p class="lead font-weight-normal font-italic">"{{manguezalclub.review}}"</p>
         <hr class="my-4">
         
         <p class="lead">
             <a class="btn btn-primary btn-small" href="#" role="button">Take it out</a>
-            <a class="btn btn-primary btn-small" href="#" role="button">Edit</a>
+            <a class="btn btn-primary btn-small" href="{{ url_for('editreview', review_id = manguezalclub._id)}}" role="button">Edit</a>
         </p>
     </div>
     {% endfor %}

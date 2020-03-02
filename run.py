@@ -29,17 +29,18 @@ def addreview():
     return render_template("addreview.html", 
         categories=mongo.db.categories.find())
 
+# This function will insert the data into mongodb accordingly and after that the user will be redirect to the page where they can see the review (Good practices")
 @app.route("/insert_review", methods=['POST'])
 def insert_review():
     review = mongo.db.review
     review.insert_one(request.form.to_dict())
     return redirect(url_for('manguezalclub'))
 
-@app.route('/edit_review/<review_id>')
-def edit_review(review_id):
+@app.route('/editreview/<review_id>')
+def editreview(review_id):
     the_review = mongo.db.review.find_one({"_id": ObjectId(review_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edit_review.html', review=the_review, categories = all_categories)
+    return render_template('editreview.html', review = the_review, categories = all_categories)
 
 
 
