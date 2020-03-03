@@ -14,8 +14,9 @@
             <a class="btn btn-primary btn-small" href="{{ url_for('edit_category', category_id =category._id)}}" role="button">Edit</a>
         </p>
     </div>
-    <div class="row">
+   
+    {% endfor %}
+     <div class="row">
         <a class="btn btn-primary btn-small" href="{{ url_for('new_category')}}" role="button">Add Category</a>
     </div>
-    {% endfor %}
 {% endblock %}
