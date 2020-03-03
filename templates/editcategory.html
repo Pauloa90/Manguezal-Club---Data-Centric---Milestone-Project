@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="addreviewcontainer">
+    <h3 class="m-5 headingaddreview">Edit category</h3>
+        
+        <!-- This form is connected with Mongodb -->
+        <form action="{{ url_for('insert_review') }}" method="POST" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 ">
+            <div class="form-row addreview">
+                <div class="form-group col-sm-12 col-md-12">
+                    <label for="category">Chose your beer!</label>
+                    <input type="text" name="category_name" id="category_name" value="{{category.category_name}}">
+                </div>
+                <button type="submit" class="btn btn-primary">Edit beer!</button>
+            </div>
+        </form>
+</div>
+{% endblock %}

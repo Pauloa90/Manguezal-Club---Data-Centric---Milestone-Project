@@ -11,7 +11,7 @@
         
         <p class="lead">
             <a class="btn btn-primary btn-small" href="" role="button">Delete</a>
-            <a class="btn btn-primary btn-small" href="" role="button">Edit</a>
+            <a class="btn btn-primary btn-small" href="{{ url_for('edit_category', category_id =category._id)}}" role="button">Edit</a>
         </p>
     </div>
     {% endfor %}
