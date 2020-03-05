@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(250, 242, 248));
+    background-color: rgb(85, 231, 85));
    
 }
 
@@ -92,7 +92,8 @@ a{
     padding-left: 0;
     margin-right: auto;
     margin-left: auto;
-
+    margin-top: 60px;
+    
 }
  
 .img {
@@ -155,23 +156,39 @@ a{
 .contact{
     background:rgb(117, 117, 117);
     padding: 30px;
-    margin: 10px;
+    margin: 50px;
     border-radius: 15px;
     font-family: 'Roboto';
     color: white;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    background:rgb(117, 117, 117);
+    padding: 30px;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    color: white;
+
+    margin: 0;
+  }
+
+}
+
 .form-control{
     color: white;
 }
+
+
 
 .formulario{
     background: #ffffff;
 }
 
 /* Footer */
-footer{
+.footer{
     background: rgb(89, 71, 109);
     padding: 20px;
     color: white;
@@ -179,12 +196,16 @@ footer{
 
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   
+}
+
+.footer i:hover {
+ color: rgb(122, 98, 255);
 }
 .footer i{
  color: white;
