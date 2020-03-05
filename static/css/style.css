@@ -224,7 +224,7 @@ a{
 .addreview{
     background: rgb(122, 98, 255);
     padding: 30px;
-    margin: 30px;
+    margin: auto;
     border-radius: 15px;
     font-family: 'Roboto';
     color: white;

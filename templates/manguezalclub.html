@@ -53,7 +53,7 @@
 			{% for manguezalclub in manguezalclub %}
 			<div class="jumbotron clubexperience p-5 m-5">
 				<h3 class="display-5">{{manguezalclub.name}} <i class="font-weight-light">experienced</i>
-					{{manguezalclub.category_name}} <i class="font-weight-light">on</i> {{manguezalclub.date}}</h3>
+					{{manguezalclub.category_name}}<span class="d-none d-md-block"><i class="font-weight-light">on </i>{{manguezalclub.date}}</span></h3>
 				<p class="lead font-weight-normal font-italic">"{{manguezalclub.review}}"</p>
 				<hr class="my-4">
 
