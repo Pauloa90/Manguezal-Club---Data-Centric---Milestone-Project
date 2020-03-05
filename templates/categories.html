@@ -2,7 +2,14 @@
 {% extends 'base.html' %}
 {% block content %}
     <!-- Here the reviews will be displayed in a Jumbotrom from Bootsrap -->
-    <h1 class="text-center headingaddreview m-5">Manguezal Club Experiences</h1>
+    <h1 class="m-5 p-4 text-center headingaddreview m-5">Did you try a different beer?</h1>
+    <h2 class="p-3 ">Add the type of beer you tried and share your experience with us!</h2>
+        <div class="text-center col-xs-8 col-sm-10 col-md-6 col-lg-5 addreview">
+            <img src="../static/images/bera.png" class="imageaddreview" alt="landing image">
+            
+            <p>Lets us know what did you think!</p>
+            <a class="btn btn-primary" href="{{ url_for('new_category')}}">Share experience</a>
+        </div>
     {% for category in categories %}
     <div class="jumbotron clubexperience p-5 m-5">
         <h3 class="display-5">{{category.category_name}}</h3>
@@ -16,7 +23,5 @@
     </div>
    
     {% endfor %}
-     <div class="row">
-        <a class="btn btn-primary btn-small" href="{{ url_for('new_category')}}" role="button">Add Category</a>
-    </div>
+     
 {% endblock %}

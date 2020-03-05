@@ -2,36 +2,41 @@
 
 <div class="addreviewcontainer">
     <h3 class="m-5 p-4 headingaddreview">Share your experience with us!</h3>
-        
-        <!-- This form is connected with Mongodb -->
-        <form action="{{ url_for('insert_review') }}" method="POST" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 ">
-            <div class="form-row addreview">
-                <div class="form-group col-12 col-md-12 ">
-                    <label for="fname">Your Name</label>
-                    <input type="text" class="form-control validate" id="name" name="name" placeholder="Your Name">
+        <div class="row">
+            <!-- This form is connected with Mongodb -->
+            <form action="{{ url_for('insert_review') }}" method="POST" class="col-xs-12 col-sm-12 col-md-6 col-lg-5 ">
+                <div class="form-row addreview">
+                    <div class="form-group col-12 col-md-12 ">
+                        <label for="fname">Your Name</label>
+                        <input type="text" class="form-control validate" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-12 col-md-12 ">
+                        <label for="date">When did you have your experience</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-12">
+                        <label for="category">Chose your beer!</label>
+                        <select id="category" name="category_name" class="form-control">
+                            <option required value="" disabled selected>Select a beer</option>
+                            {% for cat in categories %}
+                            <option value="{{ cat.category_name }}">{{ cat.category_name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group col-12 ">
+                        <label for="textreview">Add a review!</label>
+                        <textarea class="form-control" id="textreview" name="review" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add a Review</button>
                 </div>
-                <div class="form-group col-12 col-md-12 ">
-                    <label for="date">When did you have your experience</label>
-                    <input type="date" class="form-control" id="date" name="date">
-                </div>
-                <div class="form-group col-sm-12 col-md-12">
-                    <label for="category">Chose your beer!</label>
-                    <select id="category" name="category_name" class="form-control">
-                        <option value="" disabled selected>Select a beer</option>
-                        {% for cat in categories %}
-                        <option value="{{ cat.category_name }}">{{ cat.category_name }}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="form-group col-12">
-                    <label for="textreview">Add a review!</label>
-                    <textarea class="form-control" id="textreview" name="review" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Add a Review</button>
+            </form>
+            <div class="text-center col-xs-8 col-sm-10 col-md-6 col-lg-5 addreview">
+                <img src="../static/images/bera.png" class="imageaddreview" alt="landing image">
+                <h2 class="">Did you try a different beer? </h2>
+                <p>Lets us know what did you think!</p>
+                <a class="btn btn-primary" href="/get_categories">Share your experience</a>
             </div>
-        </form>
-        <h2 class="align-middle">Did you try a different beer?  </h2>
-        <p>Lets us know what did you think!</p>
-        <a class="btn btn-primary" href="/addcategory">Share experience</a>
+        </div>
+        
 </div>
 {% endblock %}

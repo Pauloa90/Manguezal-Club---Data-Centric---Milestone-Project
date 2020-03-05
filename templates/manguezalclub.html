@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     <!-- Here the reviews will be displayed in a Jumbotrom from Bootsrap -->
-    <h1 class="text-center headingaddreview m-5">Manguezal Club Experiences</h1>
+    <h1 class="m-5 p-4 text-center headingaddreview m-5">Manguezal Club Experiences</h1>
     {% for manguezalclub in manguezalclub %}
     <div class="jumbotron clubexperience p-5 m-5">
         <h3 class="display-5">{{manguezalclub.name}} <i class="font-weight-light">experienced</i> {{manguezalclub.category_name}} <i class="font-weight-light">on</i> {{manguezalclub.date}}</h3>
