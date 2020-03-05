@@ -15,11 +15,19 @@
         <h3 class="display-5">{{category.category_name}}</h3>
             
         <hr class="my-4">
+                                   
+        {% if category.category_name == 'Coffee Stout' %}
+        {% elif category.category_name == 'White IPA' %}
+        {% elif category.category_name == 'American IPA' %}
         
-        <p class="lead">
-            <a class="btn btn-primary btn-small" href="{{ url_for('delete_category', category_id =category._id)}}" role="button">Delete</a>
-            <a class="btn btn-primary btn-small" href="{{ url_for('edit_category', category_id =category._id)}}" role="button">Edit</a>
-        </p>
+        {% else %}
+        
+       
+            <p class="lead">
+                <a class="btn btn-primary btn-small" href="{{ url_for('delete_category', category_id =category._id)}}" role="button">Delete</a>
+                <a class="btn btn-primary btn-small" href="{{ url_for('edit_category', category_id =category._id)}}" role="button">Edit</a>
+            </p>
+        {% endif %}
     </div>
    
     {% endfor %}

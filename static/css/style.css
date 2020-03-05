@@ -247,9 +247,25 @@ a{
 .headingaddreview{
     font-family: 'Anton';
     text-align: center;
+    padding: 30px;
 }
 
+#mangueheading{
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #mangueheading {
+    font-size: 2rem;
+    padding: 0;
+  }
+}
 /* Manguezal Club */
 .clubexperience{
     background: #a5a2dec2;
+}
+
+.boxbeers{
+    height: 50vh;
+    width: 50vh;
 }
