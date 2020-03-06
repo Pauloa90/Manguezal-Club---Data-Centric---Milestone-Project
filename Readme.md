@@ -156,8 +156,8 @@ In order to install the application, the steps were followed as mentioned below:
         <br/>7.Git push –u heroku master
         <br/>8.Heroku ps: scale web=1
 
-*From Heroku set IP: 0.0.0.0, PORT :5000, MONGO_URI: mongodb://[username]:[password]@ds129914.mlab.com:29914/reviewmanguezalclub
-*On “More” from Heroku click on Restart all Dynos
+From Heroku set IP: 0.0.0.0, PORT :5000, MONGO_URI: mongodb://[username]:[password]@ds129914.mlab.com:29914/reviewmanguezalclub
+<br/>On “More” from Heroku click on Restart all Dynos
 
 ### Credits and Acknowledgements 
 
