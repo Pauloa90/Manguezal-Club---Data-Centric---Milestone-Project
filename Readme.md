@@ -1,0 +1,1 @@
+![Home on Mobile https://github.com/Pauloa90/Flask-final/blob/master/static/images/screenshots/mobile.PNG?raw=true) ![Home on Ipad]( https://github.com/Pauloa90/Flask-final/blob/master/static/images/screenshots/ipad.PNG?raw=true)
