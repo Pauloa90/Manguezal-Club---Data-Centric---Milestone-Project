@@ -140,12 +140,12 @@ This application has been tested on all mobiles, tablets and desktop screen size
 ### Deployment
 
 The source of this code can be found on Github and the app has been deployed into Heroku as Heroku can run python applications.
-In order to install the application, the steps were followed as mentioned below:
-Download the repository
-Login on Heroku
-Click on “Create a new App”
-Enter a unique name for the application
-From the command line on GitPod follow the commands:
+<br/>In order to install the application, the steps were followed as mentioned below:
+<br/>Download the repository
+<br/>Login on Heroku
+<br/>Click on “Create a new App”
+<br/>Enter a unique name for the application
+<br/>From the command line on GitPod follow the commands:
     1.Pip3 install Flask
     2.Pip3 install pymongo
     2.Pip3 install dnspython
