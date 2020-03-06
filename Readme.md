@@ -12,9 +12,9 @@
     own review. On the webpage users will be able to have more information about the company such as social 
     media and information about the brewery process.
      As a user I want to be able to:
-	1. make a comment a review about the beers I have tasted;
-	2. edit the review made (review, date, name or beer);
-	3. delete my review.
+        1. make a comment a review about the beers I have tasted;
+        2. edit the review made (review, date, name or beer);
+        3. delete my review.
 
 ### Demo
 
