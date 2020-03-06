@@ -139,22 +139,23 @@ This application has been tested on all mobiles, tablets and desktop screen size
 
 ### Deployment
 
-The source of this code can be found on Github and the app has been deployed into Heroku as Heroku can run python applications.
-<br/>In order to install the application, the steps were followed as mentioned below:
+The source of this code can be found on Github and the app has been deployed into Heroku as Heroku can run python applications. 
+In order to install the application, the steps were followed as mentioned below:
 <br/>Download the repository
 <br/>Login on Heroku
 <br/>Click on “Create a new App”
 <br/>Enter a unique name for the application
 <br/>From the command line on GitPod follow the commands:
-    1.Pip3 install Flask
-    2.Pip3 install pymongo
-    2.Pip3 install dnspython
-    3.Pip3 freeze –local > requiremets.txt
-    4.Echoweb: python run.py > Procfile
-    5.Git add .
-    6.Git commit –m “initial commit”
-    7.Git push –u heroku master
-    8.Heroku ps: scale web=1
+    <br/>1.Pip3 install Flask<br/>
+    <br/>2.Pip3 install pymongo<br/>
+    <br/>2.Pip3 install dnspython<br/>
+    <br/>3.Pip3 freeze –local > requiremets.txt<br/>
+    <br/>4.Echoweb: python run.py > Procfile<br/>
+    <br/> 5.Git add .<br/>
+    <br/>6.Git commit –m “initial commit”<br/>
+    <br/>7.Git push –u heroku master<br/>
+    <br/>8.Heroku ps: scale web=1<br/>
+
 *From Heroku set IP: 0.0.0.0, PORT :5000, MONGO_URI: mongodb://[username]:[password]@ds129914.mlab.com:29914/reviewmanguezalclub
 *On “More” from Heroku click on Restart all Dynos
 
