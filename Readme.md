@@ -146,15 +146,15 @@ In order to install the application, the steps were followed as mentioned below:
 <br/>Click on “Create a new App”
 <br/>Enter a unique name for the application
 <br/>From the command line on GitPod follow the commands:
-    <br/>1.Pip3 install Flask<br/>
-    <br/>2.Pip3 install pymongo<br/>
-    <br/>2.Pip3 install dnspython<br/>
-    <br/>3.Pip3 freeze –local > requiremets.txt<br/>
-    <br/>4.Echoweb: python run.py > Procfile<br/>
-    <br/> 5.Git add .<br/>
-    <br/>6.Git commit –m “initial commit”<br/>
-    <br/>7.Git push –u heroku master<br/>
-    <br/>8.Heroku ps: scale web=1<br/>
+        <br/>1.Pip3 install Flask
+        <br/>2.Pip3 install pymongo
+        <br/>2.Pip3 install dnspython
+        <br/>3.Pip3 freeze –local > requiremets.txt
+        <br/>4.Echoweb: python run.py > Procfile
+        <br/> 5.Git add .
+        <br/>6.Git commit –m “initial commit”
+        <br/>7.Git push –u heroku master
+        <br/>8.Heroku ps: scale web=1
 
 *From Heroku set IP: 0.0.0.0, PORT :5000, MONGO_URI: mongodb://[username]:[password]@ds129914.mlab.com:29914/reviewmanguezalclub
 *On “More” from Heroku click on Restart all Dynos
