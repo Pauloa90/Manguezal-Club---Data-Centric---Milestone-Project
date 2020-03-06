@@ -80,7 +80,7 @@ A print screen is shown belo with the home page on Mobile and Ipad:
 ### Feature
 
 #### Existing
-1. Create review form – this will allow users to either create a new review. The review will be inserted into the database in case of adding.
+* Create review form – this will allow users to either create a new review. The review will be inserted into the database in case of adding.
 * Read – by clicking on “manguezal club” the user will be able to read all the reviews made so far.
 * Edit review (update) – this will allow the user to edit a review, updating it in the database.
 * Delete a review – this will allow the user to delete one of the reviews removing from the database.
@@ -94,22 +94,30 @@ A print screen is shown belo with the home page on Mobile and Ipad:
 * Subscribe – This feature would allow the company to send automatically news about the company.
 
 ### Technologies Used
+
 **HTML**
-This project uses HTML5 to build the foundation of the application. Templates were used as well in order to not repeat the code written.
+<br/>This project uses HTML5 to build the foundation of the application. Templates were used as well in order to not repeat the code written.
+
 **CSS**
-This project uses CSS in order to style the components on HTML.
+<br/>This project uses CSS in order to style the components on HTML.
+
 **Bootstrap**
-The most popular frontend framework was used to make the application responsive and well designed.
+<br/>The most popular frontend framework was used to make the application responsive and well designed.
+
 **Python**
-The application is built on python language.
+<br/>The application is built on python language.
+
 **Flask**
-In order to make the frontend and backend of the application connected, Flask a micro framework, was used. A “base” template was made in HTML and using Flask I connected the “base” to repeat on others webpages the code specified.
+<br/>In order to make the frontend and backend of the application connected, Flask a micro framework, was used. A “base” template was made in HTML and using Flask I connected the “base” to repeat on others webpages the code specified.
+
 **MongoDB**
-All the data storage is using MongoDB. 2 collections were created to store the date sent by the users.
-Font Awesome
-In order to make the design and the user experience better I used Icons taken from Font Awesome.
+<br/>All the data storage is using MongoDB. 2 collections were created to store the date sent by the users.
+
+**Font Awesome**
+<br/>In order to make the design and the user experience better I used Icons taken from Font Awesome.
+
 **Google fonts**
-This project users Google Fonts to provide fonts for the headings of the web application.
+<br/>This project users Google Fonts to provide fonts for the headings of the web application.
 
 ### Testing
 
