@@ -3,13 +3,13 @@
 
 ### User eXperience
 
-    This web application was made for users who would like to make a review about the Manguezal Brewery beers and also 
-    have access to other user’s reviews. At the moment the company has 3 types of beers but eventually a different types
-     are made for special occasions giving the option for user to add new beers and make a review about them as well. 
-    The market that I want to achieve is over age people who appreciate a good beer, and add value to the company. People
-     who enjoy making part of a group where they can share experience with other people. Also those users will be able to 
-     read others reviews and make them able to edit and delete their own review. On the webpage users will be able to have
-      more information about the company such as social media and information about the brewery process.
+    This web application was made for users who would like to make a review about the Manguezal Brewery beers and 
+    also have access to other user’s reviews. At the moment the company has 3 types of beers but eventually a different 
+    types are made for special occasions giving the option for user to add new beers and make a review about them as 
+    well. The market that I want to achieve is over age people who appreciate a good beer, and add value to the company.
+    Peoplewho enjoy making part of a group where they can share experience with other people. Also those users will be able 
+    to read others reviews and make them able to edit and delete their own review. On the webpage users will be able to 
+    have more information about the company such as social media and information about the brewery process.
     As a user I want to be able to:
 	1. make a comment a review about the beers I have tasted;
 	2. edit the review made (review, date, name or beer);
