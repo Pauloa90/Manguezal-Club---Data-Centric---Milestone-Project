@@ -63,19 +63,19 @@ A print screen is shown belo with the home page on Mobile and Ipad:
 ### Skeleton
 
 **Home Page**
-On this section the user will get to know more about the company and purpose of the website. As they scroll the page down they will see a section with the ingredients, one section about the company and also a form to get in contact with the company staffs.<br/>
+<br/>On this section the user will get to know more about the company and purpose of the website. As they scroll the page down they will see a section with the ingredients, one section about the company and also a form to get in contact with the company staffs.<br/>
 
 **Review**
-This section the user is able to add a review about one of the 3 beers that the company produces and if the user tried a special limited edition not listed on the website, on this section they will be also able to add a type of beer and a comment afterwards.<br/>
+<br/>This section the user is able to add a review about one of the 3 beers that the company produces and if the user tried a special limited edition not listed on the website, on this section they will be also able to add a type of beer and a comment afterwards.<br/>
 	
 **Manguezal Club**
-On this section user will able to read others people review and also edit their own review in case they did a mistake by accident.<br/>
+<br/>On this section user will able to read others people review and also edit their own review in case they did a mistake by accident.<br/>
 
 **Add a different beer**
-On this section a simple form is displayed where users will be able to add a different type of beer.<br/>
+<br/>On this section a simple form is displayed where users will be able to add a different type of beer.<br/>
 
 **Edit a review**
-On these section users will be able to edit a review in case they did a mistake typing the review or choosing the beer. Also if the users don’t want their review on the website they will be able to delete it as well.<br/>
+<br/>On these section users will be able to edit a review in case they did a mistake typing the review or choosing the beer. Also if the users don’t want their review on the website they will be able to delete it as well.<br/>
 
 ### Feature
 
