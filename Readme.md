@@ -3,18 +3,18 @@
 
 ### User eXperience
 
-    This web application was made for users who would like to make a review about the Manguezal Brewery beers and 
-    also have access to other user’s reviews. At the moment the company has 3 types of beers but eventually a 
-    different types are made for special occasions giving the option for user to add new beers and make a review 
-    about them as well. The market that I want to achieve is over age people who appreciate a good beer, and add 
-    value to the company. People who enjoy making part of a group where they can share experience with other 
-    people. Also those users will be able to read others reviews and make them able to edit and delete their 
-    own review. On the webpage users will be able to have more information about the company such as social 
-    media and information about the brewery process.
-     As a user I want to be able to:
-        1. make a comment a review about the beers I have tasted;
-        2. edit the review made (review, date, name or beer);
-        3. delete my review.
+This web application was made for users who would like to make a review about the Manguezal Brewery beers and 
+also have access to other user’s reviews. At the moment the company has 3 types of beers but eventually a 
+different types are made for special occasions giving the option for user to add new beers and make a review 
+about them as well. The market that I want to achieve is over age people who appreciate a good beer, and add 
+value to the company. People who enjoy making part of a group where they can share experience with other 
+people. Also those users will be able to read others reviews and make them able to edit and delete their 
+own review. On the webpage users will be able to have more information about the company such as social 
+media and information about the brewery process.
+    As a user I want to be able to:
+    1. make a comment a review about the beers I have tasted;
+    2. edit the review made (review, date, name or beer);
+    3. delete my review.
 
 ### Demo
 
@@ -33,7 +33,7 @@ A print screen is shown belo with the home page on Mobile and Ipad:
  </table>
 
 #### Screenshots
- Please check the link to see a screenshot of each section.<br/>>
+ Please check the link to see a screenshot of each section.<br/>
 
 [Home]( https://github.com/Pauloa90/Flask-final/blob/master/static/images/screenshots/home1.PNG?raw=true)
 
@@ -60,16 +60,17 @@ A print screen is shown belo with the home page on Mobile and Ipad:
 
 [Manguezal Club](https://github.com/Pauloa90/Flask-final/blob/master/static/images/wireframes/screen3.jpeg?raw=true)
 
-### Skeleton
-	**Home Page**
+### Skeleton<br/>
+
+	**Home Page**<br/>
 On this section the user will get to know more about the company and purpose of the website. As they scroll the page down they will see a section with the ingredients, one section about the company and also a form to get in contact with the company staffs.<br/>
-	**Review**
+	**Review**<br/>
 This section the user is able to add a review about one of the 3 beers that the company produces and if the user tried a special limited edition not listed on the website, on this section they will be also able to add a type of beer and a comment afterwards.<br/>
 	**Manguezal Club**
 On this section user will able to read others people review and also edit their own review in case they did a mistake by accident.<br/>
-	**Add a different beer**
+	**Add a different beer**<br/>
 On this section a simple form is displayed where users will be able to add a different type of beer.<br/>
-	**Edit a review**
+	**Edit a review**<br/>
 On these section users will be able to edit a review in case they did a mistake typing the review or choosing the beer. Also if the users don’t want their review on the website they will be able to delete it as well.<br/>
 
 ### Feature
