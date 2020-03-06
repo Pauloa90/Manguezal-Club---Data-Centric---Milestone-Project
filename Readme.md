@@ -32,8 +32,9 @@ A print screen is shown belo with the home page on Mobile and Ipad:
   </tr>
  </table>
 
-#### Scrreshots
- Please check the link to see a screenshot of each section.
+#### Screenshots
+ Please check the link to see a screenshot of each section.<br/>>
+
 [Home]( https://github.com/Pauloa90/Flask-final/blob/master/static/images/screenshots/home1.PNG?raw=true)
 
 [About]( https://github.com/Pauloa90/Flask-final/blob/master/static/images/screenshots/home2.PNG?raw=true)
@@ -60,47 +61,49 @@ A print screen is shown belo with the home page on Mobile and Ipad:
 [Manguezal Club](https://github.com/Pauloa90/Flask-final/blob/master/static/images/wireframes/screen3.jpeg?raw=true)
 
 ### Skeleton
-	**Strong text** Home Page
-On this section the user will get to know more about the company and purpose of the website. As they scroll the page down they will see a section with the ingredients, one section about the company and also a form to get in contact with the company staffs.
-	**Strong text** Review
-This section the user is able to add a review about one of the 3 beers that the company produces and if the user tried a special limited edition not listed on the website, on this section they will be also able to add a type of beer and a comment afterwards.
-	**Strong text** Manguezal Club
-On this section user will able to read others people review and also edit their own review in case they did a mistake by accident.
-	**Strong text** Add a different beer
-On this section a simple form is displayed where users will be able to add a different type of beer.
-	**Strong text** Edit a review
-On these section users will be able to edit a review in case they did a mistake typing the review or choosing the beer. Also if the users don’t want their review on the website they will be able to delete it as well.
+	**Home Page**
+On this section the user will get to know more about the company and purpose of the website. As they scroll the page down they will see a section with the ingredients, one section about the company and also a form to get in contact with the company staffs.<br/>
+	**Review**
+This section the user is able to add a review about one of the 3 beers that the company produces and if the user tried a special limited edition not listed on the website, on this section they will be also able to add a type of beer and a comment afterwards.<br/>
+	**Manguezal Club**
+On this section user will able to read others people review and also edit their own review in case they did a mistake by accident.<br/>
+	**Add a different beer**
+On this section a simple form is displayed where users will be able to add a different type of beer.<br/>
+	**Edit a review**
+On these section users will be able to edit a review in case they did a mistake typing the review or choosing the beer. Also if the users don’t want their review on the website they will be able to delete it as well.<br/>
 
 ### Feature
-	#### Existing
+
+#### Existing
 1. Create review form – this will allow users to either create a new review. The review will be inserted into the database in case of adding.
 * Read – by clicking on “manguezal club” the user will be able to read all the reviews made so far.
 * Edit review (update) – this will allow the user to edit a review, updating it in the database.
 * Delete a review – this will allow the user to delete one of the reviews removing from the database.
 * Edit a beer type – this will allow the user to add a different type of beer that the users might have tried but is not listed.
 
-	#### To be implemented
+
+#### To be implemented
 * Login – This feature would allow users to only delete and edit their own review. Also the company gets leads to work on promoting the company.
 * Like dislike/Most popular – This feature would allow users to check the best rated beers and most popular among customers.
 * Email API - This feature would allow the company to get users contact details.
 * Subscribe – This feature would allow the company to send automatically news about the company.
 
 ### Technologies Used
-**Strong text** HTML
+**HTML**
 This project uses HTML5 to build the foundation of the application. Templates were used as well in order to not repeat the code written.
-**Strong text** CSS
+**CSS**
 This project uses CSS in order to style the components on HTML.
-**Strong text** Bootstrap
+**Bootstrap**
 The most popular frontend framework was used to make the application responsive and well designed.
-**Strong text** Python
+**Python**
 The application is built on python language.
-**Strong text** Flask
+**Flask**
 In order to make the frontend and backend of the application connected, Flask a micro framework, was used. A “base” template was made in HTML and using Flask I connected the “base” to repeat on others webpages the code specified.
-**Strong text** MongoDB
+**MongoDB**
 All the data storage is using MongoDB. 2 collections were created to store the date sent by the users.
 Font Awesome
 In order to make the design and the user experience better I used Icons taken from Font Awesome.
-**Strong text** Google fonts
+**Google fonts**
 This project users Google Fonts to provide fonts for the headings of the web application.
 
 ### Testing
@@ -147,5 +150,5 @@ From the command line on GitPod follow the commands:
 * The first picture on Home Page can be found on [Unsplash]( https://unsplash.com/photos/46Yad80Ynp4)
 * The text on the section “About” and the others  pictures of manguezal beers can be found [here]( https://cinemaecerveja.com.br/cervejaria-manguezal-e-sua-inspira%C3%A7%C3%A3o-no-ecossistema-do-recife-f6d8b8a41213)
 * Ingredients:
-1. The grain picture and the hops can be found [here]( https://beerandbrewing.com/VMksOysAAKGj4ZKw/article/noble-hops-cheat-sheet/)
-2. The yeast picture can be found [here]( https://learn.kegerator.com/dry-yeast/)
+    1. The grain picture and the hops can be found [here]( https://beerandbrewing.com/VMksOysAAKGj4ZKw/article/noble-hops-cheat-sheet/)
+    2. The yeast picture can be found [here]( https://learn.kegerator.com/dry-yeast/)
